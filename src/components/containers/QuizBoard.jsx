@@ -185,9 +185,9 @@ class QuizBoard extends Component {
             <QuizOverviewBar
                overviewData={
                   {
-                     category: {title: 'Category', value: 'Computer'},
-                     difficulty: {title: 'Difficulty', value: 'medium'},
-                     total: {title: 'Total', value: 10},
+                     category: {title: 'Category', value: data.category},
+                     difficulty: {title: 'Difficulty', value: data.difficulty},
+                     total: {title: 'Total', value: data.quiz.length || 0},
                      answered: {title: 'Attended', value: this.state.answered}
                   }
                }
